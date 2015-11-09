@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/tcrosen/react-starter/issues"
   },
-  "homepage": "https://github.com/tcrosen/react-starter#readme"
+  "homepage": "https://github.com/tcrosen/react-starter#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^4.1.4",
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-react": "^3.8.0",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "webpack": "^1.12.3"
+  }
 }

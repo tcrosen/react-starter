@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb",
+
+  "globals": {
+  },
+
+  "rules": {
+    // Allow functions to be defined before they are used
+    "no-use-before-define": [2, "nofunc"],
+
+    // Don't require anonymous functions to be named
+    "func-names": 0,
+
+    // Allow padding before & after block code
+    "padded-blocks": 0,
+
+    // Don't complain about missing extra commas
+    "comma-dangle": 0,
+
+    // Don't complain about short variable names in loops and such
+    "id-length": [2, {"min": 2, "exceptions": ["$", "_"]}],
+
+    // Allow unused function params
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}]
+  }
+}
