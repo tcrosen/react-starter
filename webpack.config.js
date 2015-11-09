@@ -1,21 +1,25 @@
 module.exports = {
   entry: {
-    app: './index.js'
+    js: './src/index.js'
   },
 
   output: {
-    filename: 'dist/[name].js'
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
   },
 
   module: {
     loaders: [{
       test: /\.js$/,
-      loader: 'babel',
-      exclude: /node_modules/
-    }, {
-      test: /\.js$/,
-      loader: 'jsx',
-      exclude: /node_modules/
+      loader: 'babel-loader',
+      exclude: /node_modules/,
+      query: {
+        presets: ['es2015', 'react']
+      }
     }]
-  }
+  },
+
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
 };
